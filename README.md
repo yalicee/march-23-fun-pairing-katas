@@ -20,28 +20,35 @@ You are testing **'interfaces not implementations'** - you care only about what 
 2. In your katas folder you will find a `*.js` file for each problem that needs solving. You can write your solution code here.
 3. Each kata will need a `*.test.js` file associated with it, in the `__tests__` folder. You can write tests for your code here! You will need to import the function using `const <functionName> = require('../path/to/function')`. For example: `const sumDigits = require('../katas/sum-digits.js')`
 4. Run `npm test` to run every test in your `__tests__` folder. Whenever you get one or two tests done, swap your pair roles!
-5. Below is a suggested order in which to do the katas, but it isn't compulsory. **Start with `sumDigits` as we have provided ideas for tests for this one**
+5. Below are two sets of katas for you to work on. Please do section 1 first - the order of the katas is a recommendation, but is not compulsory. However, do **start with `sumDigits` as we have provided ideas for tests for this one**.
 
--   sumDigits (_we've provided some ideas for tests for this one_)
--   countVeg
--   alternateCase
--   getCentury
--   areOrdered
--   orderVeg
--   checkUsernames
--   maxAndMin
--   sumArgs
--   range
--   removeDuplicates
--   sumAscii
--   mergeArrays
--   checkStudents
--   getYearsOfGrowth
--   getDistinctLetters
--   getFrequencies
--   getMostRepeated
--   lengthenDate
--   caesarCipher
+### Section 1
+
+- sumDigits (_we've provided some ideas for tests for this one_)
+- countVeg
+- alternateCase
+- getCentury
+- areOrdered
+- checkUsernames
+- maxAndMin
+- sumArgs
+- sumAscii
+- getYearsOfGrowth
+
+### Section 2
+
+**_Note_**: think carefully about which Jest matcher is appropriate for each case!
+
+- orderVeg
+- checkStudents
+- range
+- removeDuplicates
+- getDistinctLetters
+- getMostRepeated
+- mergeArrays
+- getFrequencies
+- lengthenDate
+- caesarCipher
 
 ## Resources
 
