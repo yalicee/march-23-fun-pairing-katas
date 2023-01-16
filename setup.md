@@ -41,7 +41,7 @@ Add the following section to your package.json:
 ```json
 {
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   }
 }
 ```
