@@ -20,6 +20,11 @@ should return:
 ]
 */
 
-function orderVeg() {}
+function orderVeg(arr) {
+  if (!arr.length) {
+    return [];
+  }
+  return arr.sort((vegA, vegB) => vegA.quantity - vegB.quantity);
+}
 
 module.exports = orderVeg;

@@ -12,6 +12,13 @@
 ], 'root') should return 9
 */
 
-function countVeg() {}
+function countVeg(veg, vegType) {
+  if (!veg || !vegType) {
+    return 0;
+  }
+  return veg.reduce((counter, { type, quantity }) => {
+    return type === vegType ? (counter += quantity) : counter;
+  }, 0);
+}
 
 module.exports = countVeg;

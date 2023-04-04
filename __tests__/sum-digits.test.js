@@ -1,4 +1,4 @@
-const sumDigits = require('../katas/sum-digits');
+const sumDigits = require("../katas/sum-digits");
 
 // Tests for sumDigits
 
@@ -10,6 +10,21 @@ const sumDigits = require('../katas/sum-digits');
   E.g. sumDigits(1) should output 1
   E.g. sumDigits(9) should output 9
 */
+
+describe("sumDigits", () => {
+  it("should return a single digit number when passed a singe digit number", () => {
+    expect(sumDigits(1)).toBe(1);
+    expect(sumDigits(9)).toBe(9);
+  });
+  it("should return correct number when passed a singe multi digit number", () => {
+    expect(sumDigits(99)).toBe(18);
+    expect(sumDigits(123)).toBe(6);
+  });
+  it("should ignore non-numerical characters", () => {
+    expect(sumDigits(9.9)).toBe(18);
+    expect(sumDigits(1.23)).toBe(6);
+  });
+});
 
 /*
   Once you have got the first test passing, then you can write your next one.

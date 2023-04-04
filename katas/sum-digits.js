@@ -7,6 +7,16 @@
     --> 6
 */
 
-function sumDigits() {}
+function sumDigits(num) {
+  const numStr = num.toString();
+  const numArr = numStr
+    .split("")
+    .filter((x) => !isNaN(+x))
+    .map((x) => +x);
+  const total = numArr.reduce((a, b) => {
+    return a + b;
+  }, 0);
+  return total;
+}
 
 module.exports = sumDigits;
