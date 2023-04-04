@@ -8,6 +8,11 @@
   --> false
 */
 
-function checkStudents() {}
+function checkStudents(arr, cohort) {
+  if (!arr.length) {
+    return false;
+  }
+  return arr.every((student) => student.cohort === cohort);
+}
 
 module.exports = checkStudents;
